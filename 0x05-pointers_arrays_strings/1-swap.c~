@@ -1,0 +1,18 @@
+#include <holberton.h>
+
+/**
+ * swap_int swaps ints lel
+ * @a pointer to a
+ * @b pointer to b
+ * return nothing
+ */
+
+void swap_int(int *a, int *b)
+
+{
+	int x;
+x = *a;
+*b = *a;
+*b = x;
+
+}
