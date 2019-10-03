@@ -10,8 +10,8 @@
 
 int main(void)
 {
-char s1[150] = "Spongebob: How many mattresses you think there are?\n";
-_strcat(s1, "Patrick: 10 \n");
+char s1[150] = "Hello ";
+_strcat(s1, "World!\n");
 printf("%s \n", s1);
 
 return (0);
