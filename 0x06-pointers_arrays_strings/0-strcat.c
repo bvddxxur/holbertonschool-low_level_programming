@@ -1,19 +1,22 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
- *@main: Dmain "The Rock" Johnson
- *@s1: first string
- *@_strcat: doesn't mean "strangle cat" strangely enough
+ * main - Dmain "The Rock" Johnson
  *
+ * dest: destination
+ * src: A Counter Strike Edition
+ * return: 0
  */
 
-
-int main(void)
+char *_strcat(char *dest, char *src);
 {
-char s1[150] = "Hello ";
-_strcat(s1, "World!\n");
-printf("%s \n", s1);
-
-return (0);
-
-}
+	int b = 0;
+	int c = 0;
+	while (dest[b] != '\0')
+		b++;
+	for (c = 0; src[c] != '\0', c++)
+		dest[b + c] = src[c];
+	dest[b + i] = '\0';
+	return (dest)
+		}
+		
