@@ -1,22 +1,22 @@
-#include "holberton.h"
-
 /**
- * main - Dmain "The Rock" Johnson
+ * _strcat - concat src to the dest string
+ * @dest: string to append by src
+ * @src: string to append to dest
  *
- * dest: destination
- * src: A Counter Strike Edition
- * return: 0
+ * Return: address of dest
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int b = 0;
-	int c = 0;
-	while (dest[b] != '\0')
-		b++;
-	for (c = 0; src[c] != '\0'; c++)
-		dest[b] = src[c];
-	dest[b] = '\0';
-	return (dest);
-		}
+int i, j;
+
+i = j = 0;
+while (*(dest + i))
+i++;
+while ((*(dest + i) = *(src + j)))
+{
+i++;
+j++;
+}
+return (dest);
+}
 
