@@ -1,21 +1,13 @@
 #include <stdio.h>
 
-/*
- * @text1: main text
- * @year: year
- * @month: month
- * @day: day
+/**
+ * main - entry block
  *Return: 1
  */
 
-int main()
+int main(void)
 {
-    char text1[] = "and that piece of art is useful\" - Dora Korpar, ";
-    int year = 2015;
-    int month = -10;
-    int day = -19;
-    
-    fprintf(stderr, "%s" "%d" "%d" "%d", text1, year, month, day);
-
-    return 1;
+char text1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+fprintf(stderr, "%s", text1);
+return (1);
 }
