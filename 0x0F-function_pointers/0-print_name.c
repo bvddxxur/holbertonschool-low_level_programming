@@ -4,8 +4,8 @@
 /**
  * print_name - main function that prints da name
  *
- *
- *
+ *@name: issa name
+ *@f: issa f
  *
  */
 
