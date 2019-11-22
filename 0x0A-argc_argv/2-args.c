@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- *main - ayeeee
+ * main - ayeeee
  *@argc: arg1
  *@argv: arg2
- *return: return
- */
+ * Return: return 0
+*/
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
