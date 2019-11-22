@@ -1,3 +1,1 @@
-Function pointers brah
-this project is about pointers that point to functions
-ayeeeeeeee
+## 0x0F-function_pointers
