@@ -1,17 +1,15 @@
 #include <stdio.h>
-
 /**
- * main - ayeeee
- *@argc: arg1
- *@argv: arg2
- * Return: return 0
-*/
-
-int main(int argc, char *argv[])
+ * main - prints all passed arguments
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: always 0
+ */
+int main(int argc, char const *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-		printf("%s\n", argv[i]);
-	return (0);
+int i;
+for (i = 0; i < argc; i++)
+printf("%s\n", argv[i]);
+return (0);
 }

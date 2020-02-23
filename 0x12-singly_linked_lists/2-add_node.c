@@ -1,29 +1,32 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
-#include <string.h>
+
 /**
- * add_node - fn
- *@head: param
- *@str: param
- * Return: Always 0.
+ * add_node - return pointer of new element
+ * @head: head pointer to list
+ * @str: string
+ * Return: number of elements
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *m;
-int i;
-m = malloc(sizeof(list_t));
-if (m == NULL)
+unsigned int str_len;
+list_t *new;
+
+if (str == NULL)
+return (NULL);
+new = malloc(sizeof(list_t));
+if (new == NULL)
+return (NULL);
+new->str = strdup(str);
+if (new->str == NULL)
 {
+free(new);
 return (NULL);
 }
-i = 0;
-while (str[i] != '\0')
-i++;
-m->len = i;
-m->str = strdup(str);
-m->next = *head;
-*head = m;
-return (*head);
+for (str_len = 0; new->str[str_len]; str_len++)
+;
+new->len = str_len;
+new->next = *head;
+*head = new;
+return (new);
 }

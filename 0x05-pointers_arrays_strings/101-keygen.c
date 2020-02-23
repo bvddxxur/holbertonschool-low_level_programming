@@ -2,29 +2,24 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - creates a pwd of x 2772
- *
- * Return:0;
+ * main - generates keygen.
+ * Return: 0 Always.
  */
 int main(void)
 {
-int i, r, x;
-char array[63] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-char pwd[100];
-srand(time(NULL));
-x = 0;
-i = 0;
-while (x < (2772 - 122))
+int r = 0, c = 0;
+time_t t;
+
+srand((unsigned int) time(&t));
+
+while (c < 2772)
 {
 r = rand() % 62;
-pwd[i] = array[r];
-x = x + pwd[i];
-i++;
+if ((c + r) > 2772)
+break;
+c = c + r;
+printf("%c", r);
 }
-r = 2772 - x;
-pwd[i] = r;
-i++;
-pwd[i] = '\0';
-printf("%s", pwd);
+printf("%c\n", (2772 - c));
 return (0);
 }

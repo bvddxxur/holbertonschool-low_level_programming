@@ -1,28 +1,31 @@
 #include "holberton.h"
-int prm(int x, int n);
+
 /**
- * is_prime_number - return if it's a prime number.
- * @n: number to test.
- * Return: 1 if n prime, else 0.
+ * _prime - checks to see if number is prime
+ * @i: factor
+ * @x: to check prime number
+ *
+ * Return: 1 if prime, 0 if not
+ */
+int _prime(int i, int x)
+{
+if (x < 2 || !(x % i))
+return (0);
+else if (i > x / 2)
+return (1);
+else
+return (_prime(i + 1, x));
+}
+
+/**
+ * is_prime_number - check number is prime
+ * @n: number to check
+ *
+ * Return: 1 if prime, 0 if not
  */
 int is_prime_number(int n)
 {
-	return (prm(2, n));
-}
-/**
- * prm - prime number generator
- * @x: counter
- * @n: number to test.
- * Return: 1 or 0 or function recall.
- */
-int prm(int x, int n)
-{
-	if (n <= 1)
-		return (0);
-	else if (x == n)
-		return (1);
-	else if (n % x == 0)
-		return (0);
-	else
-		return (prm(x + 1, n));
+if (n == 2)
+return (1);
+return (_prime(2, n));
 }

@@ -1,16 +1,17 @@
 #include <stdio.h>
 /**
- * main - entry block
- * @void: no argument
- * Return: 0 (Sucess)
-**/
+ * main - Entry point
+ *
+ *Return: Always 0 (Success)
+ */
 int main(void)
 {
-int x;
-for (x = '0'; x <= '9'; x++)
+int i;
+
+for (i = 0; i < 10; i++)
 {
-putchar(x);
-if (x != '9')
+putchar(i + '0');
+if (i != 9)
 {
 putchar(',');
 putchar(' ');

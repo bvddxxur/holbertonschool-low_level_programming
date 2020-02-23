@@ -1,24 +1,26 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
 
 /**
- * print_list - fn
- *@h: param
- * Return: Always 0.
+ * print_list - print all the elements of a list
+ * @h: head pointer to list
+ * Return: number of elements
  */
+
 size_t print_list(const list_t *h)
 {
-list_t *s;
-size_t k = 0;
-for (s = (list_t *)h; s != NULL; s = s->next)
+const list_t *tmp;
+unsigned int i;
+
+tmp = h;
+for (i = 0; tmp; i++)
 {
-if (s->str)
-printf("[%u] %s\n", s->len, s->str);
+if (tmp->str)
+printf("[%u] %s\n", tmp->len, tmp->str);
 else
-printf("[0] (nil)\n");
-k++;
+printf("[%u] %s\n", 0, "(nil)");
+
+tmp = tmp->next;
 }
-return (k);
+return (i);
 }

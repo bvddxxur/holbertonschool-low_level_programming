@@ -1,18 +1,15 @@
 #include "holberton.h"
 
 /**
- * print_line - draws a straight line into terminal
- * @n: integer to count
- * Return: none;
+ * print_line - check the code for Holberton School students.
+ * @n : lines num
+ * Return: Always 0.
  */
-
 void print_line(int n)
 {
-int count;
+int i;
 
-for (count = 0; count < n; count++)
-{
+for (i = 0; i < n; i++)
 _putchar('_');
-}
 _putchar('\n');
 }

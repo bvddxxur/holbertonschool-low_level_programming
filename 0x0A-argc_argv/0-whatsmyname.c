@@ -1,16 +1,14 @@
 #include <stdio.h>
-
 /**
- *main - Entry point
- *@argc: arg1
- *@argv: arg2
- *Return: return
-*/
-int main(int argc, char *argv[])
-{
-int name;
+ * main - prints the name of the program
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: always 0
+ */
 
-for (name = 0; name < argc; name++)
-printf("%s\n", argv[name]);
+int main(int argc  __attribute__((unused)), char const *argv[])
+{
+printf("%s\n", argv[0]);
 return (0);
 }

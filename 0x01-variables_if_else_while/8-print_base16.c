@@ -1,16 +1,18 @@
 #include <stdio.h>
 /**
- * main - entry block
- * @void: no argument
- * Return: 0 (Sucess)
-**/
+ * main - Entry point
+ * hex
+ *Return: Always 0 (Success)
+ */
 int main(void)
 {
-int x = 0;
-for (x = 0; x < 10; x++)
-putchar(x % 10 + '0');
-for (x = 'a'; x <= 'f'; x++)
-putchar(x);
+char ch;
+int n;
+
+for (n = 0; n < 10; n++)
+putchar(n + '0');
+for (ch = 'a'; ch <= 'f'; ch++)
+putchar(ch);
 putchar('\n');
 return (0);
 }

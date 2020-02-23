@@ -1,22 +1,17 @@
-#include <stdio.h>
 #include "holberton.h"
-
 /**
- * _abs - computes absolute value of int
- * @i: interger to computer
- *
- * Return: absolute value;
+ * _abs - entry point
+ * @n: number to check
+ * Return: int
  */
-
-int _abs(int i)
+int _abs(int n)
 {
-if (i < 0)
+if (n >= 0)
 {
-i = i * -1;
-return (i);
+return (n);
 }
 else
 {
-return (i);
+return (-n);
 }
 }

@@ -1,3 +1,1 @@
-a9raaaaaaaaaaniiiii
-ma tfakarnich ya sa7bi bel tbeugga w mche
-5alin ketem cooooooodiiiii 
+## 0x07-pointers_arrays_strings

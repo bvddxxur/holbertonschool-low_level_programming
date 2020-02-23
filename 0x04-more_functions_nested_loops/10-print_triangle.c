@@ -1,31 +1,30 @@
 #include "holberton.h"
 
 /**
- * print_triangle - prints a triangle
- * @size: size of triangle
- * Return: nothing
+ * print_triangle - print triangle #.
+ * @n : base
+ * Return: Always 0.
  */
+void print_triangle(int n)
+{
+int i, j;
 
-void print_triangle(int size)
+if (n > 0)
 {
-int count, count2, space;
-
-if (size <= 0)
+for (i = 0; i < n; i++)
 {
-_putchar('\n');
-}
-for (count = 0; count < size; count++)
+for (j = 0; j < n; j++)
 {
-for (count2 = 0; count2 < size; count2++)
-{
-space = size - count - 1;
-if (count2 < space)
-{
+if (j < n - i - 1)
 _putchar(' ');
-}
 else
 _putchar('#');
 }
+_putchar('\n');
+}
+}
+else
+{
 _putchar('\n');
 }
 }

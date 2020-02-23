@@ -1,25 +1,20 @@
 #include <stdio.h>
-
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * main - entry point
+ * multiples sum
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
-int res = 0;
+int sum = 23, i;
 
-for (i = 0; i < 1024; i++)
+for (i = 10; i < 1024; i++)
 {
-if ((i % 3 == 0) || (i % 5 == 0))
+if (i %  3 == 0 || i % 5 == 0)
 {
-res += i;
+sum += i;
 }
-else
-continue;
 }
-
-printf("%d\n", res);
+printf("%d\n", sum);
 return (0);
 }

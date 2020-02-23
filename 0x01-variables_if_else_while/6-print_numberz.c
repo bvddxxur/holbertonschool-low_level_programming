@@ -1,15 +1,17 @@
 #include <stdio.h>
 /**
- *main - print numbers
- *Description: print all single digit numbers of the
- *base 10
- *Return: 0 if true
+ * main - Entry point
+ * putchar numberz
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
-for (i = '0'; i <= '9'; i++)
-putchar(i);
+int n;
+
+for (n = 0; n < 10; n++)
+{
+putchar(n + '0');
+}
 putchar('\n');
 return (0);
 }

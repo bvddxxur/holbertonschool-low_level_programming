@@ -1,1 +1,1 @@
-c programming is behi barcha
+# 0x00. C - Hello, World

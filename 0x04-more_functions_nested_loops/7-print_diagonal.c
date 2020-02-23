@@ -1,31 +1,29 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - prints diagonal
- *@n: size
- * Return: none
+ * print_diagonal - check the code for Holberton School students.
+ * @n : int
+ * Return: Always 0.
  */
-
 void print_diagonal(int n)
 {
-int count, count_2;
-
-for (count = 0; count < n; count++)
+int i, j;
+if (n > 0)
 {
-for (count_2 = 0; count_2 <= count; count_2++)
+for (i = 0; i < n; i++)
 {
-if (count_2 != count)
+for (j = 0; j < i; j++)
 {
 _putchar(' ');
 }
+_putchar('\\');
+_putchar('\n');
+}
+}
 else
 {
-_putchar('\\');
+_putchar('\n');
 }
 
-}
-_putchar('\n');
-}
-if (n <= 0)
-_putchar('\n');
+
 }

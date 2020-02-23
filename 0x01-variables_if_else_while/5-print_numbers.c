@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
- *main - print numbers
- *Description:  print numbers
- *base10
- *Return: 0 is true
+ * main - Entry point
+ * numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
-printf("%d", i);
+int n;
+for (n = 0; n < 10; n++)
+printf("%d", n);
 printf("\n");
 return (0);
 }

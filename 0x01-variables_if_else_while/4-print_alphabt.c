@@ -1,17 +1,20 @@
 #include <stdio.h>
-
 /**
- *main - putchar alphabet
- *Description: print alphabet except q and e
- *case
- *Return: 0 if true
+ * main - Entry point
+ * execpt q & e
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-int x;
-for (x = 'a'; x <= 'z'; x++)
-if (x != 'e' && x != 'q')
-putchar(x);
+char ch;
+
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+if (ch != 'q' && ch != 'e')
+{
+putchar(ch);
+}
+}
 putchar('\n');
 return (0);
 }

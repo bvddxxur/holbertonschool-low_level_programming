@@ -1,23 +1,26 @@
 #include "holberton.h"
 
 /**
- * print_square - prints a square of given size
- * @size: size of square
- * Return: none;
+ * print_square - check the code for Holberton School students.
+ * @n : int
+ * Return: Always 0.
  */
-
-void print_square(int size)
+void print_square(int n)
 {
-int count, count2;
-
-if (size <= 0)
-_putchar('\n');
-for (count = 0; count < size; count++)
+int i, j;
+if (n > 0)
 {
-for (count2 = 0; count2 < size; count2++)
+for (i = 0; i < n; i++)
+{
+for (j = 0; j < n; j++)
 {
 _putchar('#');
 }
+_putchar('\n');
+}
+}
+else
+{
 _putchar('\n');
 }
 }

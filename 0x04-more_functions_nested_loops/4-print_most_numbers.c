@@ -1,19 +1,17 @@
 #include "holberton.h"
 
 /**
- * print_most_numbers - printing 0 -9 exluding 2 and 4
+ * print_most_numbers - check the code for Holberton School students.
  *
- * Return: none;
+ * Return: Always 0.
  */
-
 void print_most_numbers(void)
 {
-int count;
-
-for (count = 0; count <= 9; count++)
+int i;
+for (i = 0; i < 10; i++)
 {
-if (count != 2 && count != 4)
-_putchar(count + '0');
+if (i != 2 && i != 4)
+_putchar(i + '0');
 }
 _putchar('\n');
 }

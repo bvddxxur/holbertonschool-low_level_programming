@@ -1,13 +1,10 @@
-#include <stdio.h>
 #include "holberton.h"
-
 /**
- * add - adds two integers
- * @a: integer 1
- * @b: integer 2
- * Return: returns result
+ * add - entry point
+ * @a: number
+ * @b: number
+ * Return: Always 0 (Success)
  */
-
 int add(int a, int b)
 {
 return (a + b);

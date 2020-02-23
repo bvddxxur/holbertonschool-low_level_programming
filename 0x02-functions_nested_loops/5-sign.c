@@ -1,15 +1,9 @@
-#include <stdio.h>
 #include "holberton.h"
-
 /**
- * print_sign - prints the sign of a number
- * @n: number that is being checked
- *
- * Return: 1 and prints + if n is positive
- * Returns 0 and prints 0 if n is zero
- * Returns -1 and prints - if n is negative
+ * print_sign - entry point
+ * @n : number to check
+ * Return: int
  */
-
 int print_sign(int n)
 {
 if (n > 0)

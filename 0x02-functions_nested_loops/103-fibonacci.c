@@ -1,27 +1,22 @@
 #include <stdio.h>
 /**
- * main - function that prints out the sum of even value fibo
- * numbers up to 4000000
- * Return: 0
+ * main - print fibonacci
+ * fibonacci s
+ * Return: always 0
  */
-
 int main(void)
 {
-long i, j, even_sum, current_sum, max;
+long int u0 = 1, u1 = 2, sum = 2;
+int ip;
 
-i = 1;
-j = 2;
-max = 4000000;
-even_sum = 0;
-current_sum = 0;
-while (i < max && j < max)
+for (ip = 1; ip < 31; ip++)
 {
-if ((j % 2) == 0)
-even_sum += j;
-current_sum = i + j;
-i = j;
-j = current_sum;
+if ((u0 + u1) % 2 == 0)
+sum += u0 + u1;
+
+u1 = u0 + u1;
+u0 = u1 - u0;
 }
-printf("%ld\n", even_sum);
+printf("%ld\n", sum);
 return (0);
 }

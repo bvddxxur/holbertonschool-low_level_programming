@@ -1,33 +1,30 @@
 #include <stdio.h>
 /**
- * main - 102
- * the++++
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int a = 0;
-int b;
-while (a <= 98)
+int i, j;
+
+for (i = 0; i < 99; i++)
 {
-b = a + 1;
-while (b <= 99)
+for (j = i + 1; j < 100; j++)
 {
-putchar(a / 10 % 10 + '0');
-putchar(a % 10 + '0');
+putchar(i / 10 + '0');
+putchar(i % 10 + '0');
 putchar(' ');
-putchar(b / 10 % 10 + '0');
-putchar(b % 10 + '0');
-if (a == 98 && b == 99)
-putchar('\n');
-else
+putchar(j / 10 + '0');
+putchar(j % 10 + '0');
+
+if (i != 98 || j != 99)
 {
 putchar(',');
 putchar(' ');
 }
-b++;
 }
-a++;
 }
+putchar('\n');
 return (0);
 }

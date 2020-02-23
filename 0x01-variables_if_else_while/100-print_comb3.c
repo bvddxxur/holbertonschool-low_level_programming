@@ -1,20 +1,21 @@
 #include <stdio.h>
 /**
- * main - entry block
- * @void: no argument
- * Return: 0 (Sucess)
-**/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int x, z;
-for (x = '0'; x <= '8'; x++)
-for (z = x + 1; z <= '9'; z++)
+int i, j;
+
+for (i = 0; i < 9; i++)
 {
-if (x != z)
+for (j = i + 1; j < 10; j++)
 {
-putchar(x);
-putchar(z);
-if (x != '8' || z != '9')
+putchar(i + '0');
+putchar(j + '0');
+
+if (i < 8)
 {
 putchar(',');
 putchar(' ');

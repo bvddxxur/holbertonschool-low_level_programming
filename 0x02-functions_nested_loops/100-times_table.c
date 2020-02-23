@@ -1,50 +1,48 @@
 #include "holberton.h"
+
 /**
-* print_times_table - print n times the tables
-* @n: where start table
-*
-*Return: nothing
-*/
+ * print_times_table - print times tables from zero to n
+ * @n: time
+ */
+
 void print_times_table(int n)
 {
-int r, c;
-int h, d, u, mul;
+int b, p;
+int a = 0;
 
 if (n >= 0 && n <= 15)
 {
-for (r = 0; r <= n; r++)
+while (a <= n)
 {
-for (c = 0; c <= n; c++)
-{
-mul = r * c;
-h = mul / 100;
-d = mul / 10 % 10;
-u = mul % 10;
-if (h == 0 && c != 0)
-{
-_putchar(' ');
-if (d == 0)
-_putchar(' ');
-else
-_putchar(d + '0');
-_putchar(u + '0');
-}
-else if (h != 0)
-{
-_putchar(h + '0');
-_putchar(d + '0');
-_putchar(u + '0');
-}
-if (c == 0)
+b = 1;
 _putchar('0');
-if (c != n)
+while (b <= n)
 {
+p = a * b;
 _putchar(',');
 _putchar(' ');
+if (p < 10)
+{
+_putchar(' ');
+_putchar(' ');
+_putchar(p + '0');
 }
+else if (p > 99)
+{
+_putchar((p / 100) + '0');
+_putchar(((p / 10) % 10) + '0');
+_putchar((p % 10) + '0');
+}
+else
+{
+_putchar(' ');
+_putchar((p / 10) + '0');
+_putchar((p % 10) + '0');
+}
+b++;
 }
 _putchar('\n');
-c = 0;
+a++;
 }
 }
 }

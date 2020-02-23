@@ -1,1 +1,1 @@
-chbi baba?!
+# 0x09-static_libraries

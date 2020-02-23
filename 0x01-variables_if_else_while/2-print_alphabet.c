@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
- *main-print alphabet
- *Description: printing alphabet
- *from a to z
- *Return: 0
+ * main - Entry point
+ * putchar a-z
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int x;
-for (x = 'a'; x <= 'z'; x++)
-putchar (x);
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+putchar(ch);
 putchar('\n');
 return (0);
 }

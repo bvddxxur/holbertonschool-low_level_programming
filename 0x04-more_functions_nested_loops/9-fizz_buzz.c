@@ -1,28 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Fizz Buzz
+ * main - check the code for Holberton School students.
  *
- * Return: 0
+ * Return: Always 0.
  */
-
 int main(void)
 {
-int count;
+int i;
 
-for (count = 1; count <= 100; count++)
+for (i = 1; i < 100; i++)
 {
-if ((count % 3) == 0 && (count % 5) != 0)
-printf("Fizz ");
-else if (count == 100)
-printf("Buzz");
-else if ((count % 5) == 0 && (count % 3) != 0)
-printf("Buzz ");
-else if ((count % 3) == 0 && (count % 3) == 0)
+if (i % 3 == 0 && i % 5 == 0)
 printf("FizzBuzz ");
+else if (i % 3 == 0)
+printf("Fizz ");
+else if (i % 5 == 0)
+printf("Buzz ");
 else
-printf("%d ", count);
+printf("%d ", i);
 }
-printf("\n");
+printf("Buzz\n");
 return (0);
 }
